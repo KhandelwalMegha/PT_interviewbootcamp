@@ -28,7 +28,7 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -6681,7 +6681,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_Login-142" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_Login-142">
               <stringProp name="HTTPSampler.domain">advantageonlinebanking.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -6856,7 +6856,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_Login-145" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_Login-145">
               <stringProp name="HTTPSampler.domain">advantageonlinebanking.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -7362,7 +7362,7 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="03_Accounts" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="03_Accounts" enabled="false">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
@@ -7793,7 +7793,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time">
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="false">
             <intProp name="ActionProcessor.action">1</intProp>
             <intProp name="ActionProcessor.target">0</intProp>
             <stringProp name="ActionProcessor.duration">100</stringProp>
@@ -7805,7 +7805,7 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04_Cards" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04_Cards" enabled="false">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
@@ -8130,7 +8130,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time">
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="false">
             <intProp name="ActionProcessor.action">1</intProp>
             <intProp name="ActionProcessor.target">0</intProp>
             <stringProp name="ActionProcessor.duration">100</stringProp>
@@ -8142,7 +8142,7 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="05_Logout" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="05_Logout" enabled="false">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
@@ -8786,6 +8786,18 @@
             </hashTree>
           </hashTree>
         </hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">C:/Users/Megha/Desktop/Jmeter/Testdata.csv</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">Username,Password </stringProp>
+        </CSVDataSet>
+        <hashTree/>
       </hashTree>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
